@@ -72,9 +72,8 @@ html {
 }
 
 .profile__image {
-    width: 50px;
+    width: 60px;
     height: 50px;
-    border-radius: 50%;
     object-fit: cover;
     margin-left: 20px;
 }
@@ -88,13 +87,6 @@ html {
     align-items: center;
 }
 
-.header__logo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-    object-fit: cover;
-}
 
 .header__title {
     font-size: 24px;
@@ -805,41 +797,6 @@ input:checked+.slider:before {
 
 
 /* Estilos responsivos para mejorar la legibilidad en dispositivos móviles */
-@media screen and (max-width: 1000px) {
-    .proyectos {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .proyectos {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
-    .card {
-        width: 100%;
-        aspect-ratio: auto;
-    }
-
-    .btn-agregar-carrito {
-        width: 70%;
-        font-size: 0.6rem;
-    }
-
-    .content h2 {
-        font-size: 0.8rem;
-    }
-
-    .content p {
-        font-size: 0.5rem;
-    }
-
-    .boton-descarga {
-        width: 50%;
-    }
-}
 
 /* Header responsivo */
 @media screen and (max-width: 1000px) {
@@ -875,7 +832,6 @@ input:checked+.slider:before {
     .profile__image {
         width: 120px;
         height: 120px;
-        border-radius: 50%;
         object-fit: cover;
         display: block;
         margin: 0 auto;
