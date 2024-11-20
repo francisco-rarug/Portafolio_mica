@@ -79,6 +79,10 @@ html {
     margin-left: 20px;
 }
 
+.profile__image {
+    content: url('Recursos/MIKK-15.png');
+}
+
 .header__logo {
     display: flex;
     align-items: center;
@@ -1011,6 +1015,10 @@ input:checked+.slider:before {
 
 /* Header */
 
+body.dark-mode #profileImage{
+    content: url('Recursos/LOGOM-14.png');
+}
+
 body.dark-mode .header {
     background-color: #121212;
     color: #ffffff;
@@ -1134,3 +1142,4 @@ body.dark-mode .skill-card h3{
     color: #4d0b4a;
     
 }
+
