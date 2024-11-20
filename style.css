@@ -206,49 +206,6 @@ html {
     color: #4d0b4a;
 }
 
-.buttonTitulo {
-    margin: 0;
-    height: auto;
-    background: transparent;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-}
-
-.buttonTitulo {
-    --border-right: 6px;
-    --text-stroke-color: rgb(0, 0, 0);
-    --animation-color: #4d0b4a;
-    --fs-size: 2em;
-    letter-spacing: 3px;
-    text-decoration: none;
-    font-size: var(--fs-size);
-    font-family: "Arial";
-    position: relative;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--text-stroke-color);
-}
-
-.hover-text {
-    position: absolute;
-    box-sizing: border-box;
-    content: attr(data-text);
-    color: var(--animation-color);
-    width: 0;
-    inset: 0;
-    border-right: var(--border-right) solid var(--animation-color);
-    overflow: hidden;
-    transition: width 0.5s ease, filter 0.5s ease;
-    -webkit-text-stroke: 1px var(--animation-color);
-}
-
-.buttonTitulo:hover .hover-text {
-    width: 100%;
-    filter: drop-shadow(0 0 23px var(--animation-color));
-    transition: width 0.5s ease, filter 0.5s ease;
-}
-
 .switch {
     font-size: 17px;
     position: relative;
@@ -1057,20 +1014,6 @@ body.dark-mode .menu-toggle {
 body.dark-mode .nav__menu {
     background-color: #202020;
     color: #ffffff;
-}
-
-body.dark-mode .buttonTitulo {
-    --text-stroke-color: #b3b3b3;
-    --animation-color: #635985;
-}
-
-body.dark-mode .buttonTitulo .hover-text {
-    -webkit-text-stroke: 1px var(--animation-color);
-    border-right: var(--border-right) solid var(--animation-color);
-}
-
-body.dark-mode .buttonTitulo:hover .hover-text {
-    filter: drop-shadow(0 0 23px var(--animation-color));
 }
 
 /* Sobre mi */
