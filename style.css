@@ -387,6 +387,10 @@ input:checked+.slider:before {
     color: #ffffff;
 }
 
+.mascota-destacada-descripcion strong {
+    color: #4d0b4a;
+}
+
 .mascota-destacada-video {
     position: relative;
     width: 100%;
