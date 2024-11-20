@@ -628,6 +628,62 @@ input:checked+.slider:before {
 
 
 /* Skills */
+/* Barra de progreso con estilo de animación de brillo constante */
+.progress-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.progress-bar {
+    width: calc(100%);
+    height: 10px;
+    background: #F9F9F9;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #4d0b4a;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background: repeating-linear-gradient(45deg, #4d0b4a 0 30px, #4d0b4a 0 40px) right/200% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    animation: fillProgress 6s ease-in-out infinite, lightEffect 1s infinite linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fillProgress {
+    0% {
+        width: 0;
+    }
+    33% {
+        width: 33.33%;
+    }
+    66% {
+        width: 66.67%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes lightEffect {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        background: repeating-linear-gradient(45deg, #4d0b4a 0 30px, #836d94 0 40px) right/200% 100%;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        background: repeating-linear-gradient(45deg, #4d0b4a 0 30px, #836d94 0 40px, rgba(255, 255, 255, 0.3) 0 40px) right/200% 100%;
+    }
+}
+
+
+
 .skills-section {
     padding: 4rem 1rem;
     background-color: #4d0b4a;
